@@ -2,16 +2,16 @@
     'tweet',
 ])
 
-<div class="card border">
+<div class="card border font-bold">
     <a href="{{ route( 'tweet.view', $tweet->baseTweet->id) }}">
         <div class="card-body pb-1">
-            <p class="mb-2  px-1">{{ $tweet->content }}</p>     
+            <p class="mb-2 text-lg px-1">{{ $tweet->content }}</p>     
         </div>
     </a>
     <div class="card-actions p-4 pt-1 flex justify-between items-center">
         @if (request()->routeIs('home'))
             <a 
-                class="btn btn-text  btn-square" 
+                class="btn btn-text btn-square" 
                 href="{{ route( 'tweet.view', $tweet->id) }}">
                 <span class="icon-[tabler--message] size-6 mx-2"></span>
             </a>
@@ -27,12 +27,12 @@
             </button>    
         @endif
     
-        <a  href="{{ route('profile', $tweet->user->id) }}" class="flex items-center btn btn-text h-12 pl-0">   
+        <a  href="{{ route('profile', $tweet->user->id) }}" class="flex items-center btn btn-text h-12 pl-0 gap-2">   
             <div class="font-semibold">
                 {{ $tweet->user->name }}
             </div>
             <div class="avatar">
-                <div class="size-10 rounded-full">
+                <div class="size-10 rounded-full overflow-hidden">
                     <img src="/storage/{{ $tweet->user->avatar }}" alt="avatar" />
                 </div>
             </div>

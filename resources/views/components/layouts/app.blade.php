@@ -3,8 +3,8 @@
         class="navbar bg-base-100 rounded-box shadow-xl shadow-gray-300/30 dark:shadow-[#53589A]/30 sticky top-0 z-50 border-b-4 border-[#53589A]">
         <div class="flex flex-1 items-center">
             <a href="/">
-                <span class="icon-[tabler--brand-twitter] size-7 mx-2 mt-2 "></span>
-                <a class=" text-base-content link-neutral text-xl font-bold no-underline mb-1" href="/">
+                <span class="icon-[tabler--brand-twitter] size-8 mx-2 mt-2 "></span>
+                <a class=" text-base-content link-neutral text-2xl font-bold no-underline mb-1 mt-2" href="/">
                     عصفور
                 </a>
             </a>
@@ -16,7 +16,7 @@
                     <button id="dropdown-scrollable" type="button" class="dropdown-toggle flex items-center"
                         aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                         <div class="avatar">
-                            <div class="size-9.5  rounded-full">
+                            <div class="size-10  rounded-full">
                                 <img src="/storage/{{Auth::user()->avatar }}" alt="avatar 1"  />
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                             <form method="post" action="{{ route('logout') }}" class="w-full">
                                 @csrf
                                 <button type="submit" class="btn btn-soft btn-block text-red-400">
-                                    <span class="icon-[tabler--logout]"></span>
+                                    <span class="icon-[tabler--logout] size-5"></span>
                                     تسجيل الخروج
                                 </button>
                             </form>

@@ -3,8 +3,8 @@
         class="navbar bg-base-100 rounded-box shadow-xl shadow-gray-300/30 dark:shadow-[#53589A]/30 sticky top-0 z-50 border-b-4 border-[#53589A]">
         <div class="flex flex-1 items-center">
             <a href="/">
-                <span class="icon-[tabler--brand-twitter] size-7 mx-2 mt-2 "></span>
-                <a class="link text-base-content link-neutral text-xl font-bold no-underline mb-1" href="/">
+                <span class="icon-[tabler--brand-twitter] size-8 mx-2 mt-2 "></span>
+                <a class=" text-base-content link-neutral text-2xl font-bold no-underline mb-1 mt-2" href="/">
                     عصفور
                 </a>
             </a>
@@ -58,11 +58,11 @@
         </div>
 
         <!-- اسم المستخدم -->
-        <h1 class="mt-4 text-3xl font-bold text-white">{{ $user->name }}</h1>
+        <h1 class="mt-4 text-4xl font-bold text-white">{{ $user->name }}</h1>
 
         <!-- خط فاصل -->
         <div class="mt-6 mb-4 border-t border-3 border-white"></div>
-        <p class="flex m-3 font-bold text-xl"> التغريدات</p>
+        <p class="flex m-3 font-bold text-2xl"> التغريدات</p>
         <!-- تغريدات المستخدم -->
         <div class="space-y-3">
             @forelse($user->tweets as $tweet)
